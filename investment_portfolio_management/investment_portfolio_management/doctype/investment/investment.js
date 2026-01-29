@@ -1,7 +1,10 @@
 frappe.ui.form.on('Investment', {
+<<<<<<< HEAD
     refresh: function (frm) {
         frm.trigger('toggle_fields');
     },
+=======
+>>>>>>> sahil-feature
 
     investment_type: function (frm) {
         if (!frm.doc.investment_type) return;
@@ -16,7 +19,11 @@ frappe.ui.form.on('Investment', {
     toggle_fields: function (frm) {
         if (!frm.doc.investment_type) return;
 
+<<<<<<< HEAD
         // If in cache use, else fetch
+=======
+        // If in cache use, else fetch 
+>>>>>>> sahil-feature
         if (frm.inv_type_settings) {
             apply_settings(frm, frm.inv_type_settings);
         } else {
@@ -27,8 +34,23 @@ frappe.ui.form.on('Investment', {
                 });
         }
     }
+<<<<<<< HEAD
 });
 
+=======
+    
+});
+
+function calculate_amount(frm) {
+    let units = frm.doc.units || 0;
+    let price = frm.doc.price_per_unit || 0;
+
+    let amount = units * price;
+
+    frm.set_value('amount_invested', amount);
+}
+
+>>>>>>> sahil-feature
 function apply_settings(frm, settings) {
     // has_scheme -> investment_scheme
     frm.toggle_display('investment_scheme', settings.has_scheme);

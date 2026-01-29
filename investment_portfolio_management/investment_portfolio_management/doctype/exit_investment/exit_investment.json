@@ -8,15 +8,27 @@
  "field_order": [
   "section_break_gmt3",
   "investment",
+<<<<<<< HEAD
   "exit_date",
   "exit_type",
+=======
+>>>>>>> sahil-feature
   "units_sold",
   "exit_price",
   "exit_amount",
   "charges",
+<<<<<<< HEAD
   "net_amount",
   "broker",
   "pnl",
+=======
+  "column_break_qjfm",
+  "net_amount",
+  "broker",
+  "pnl",
+  "exit_date",
+  "exit_type",
+>>>>>>> sahil-feature
   "section_break_owjv",
   "remarks",
   "amended_from"
@@ -24,7 +36,12 @@
  "fields": [
   {
    "fieldname": "section_break_gmt3",
+<<<<<<< HEAD
    "fieldtype": "Section Break"
+=======
+   "fieldtype": "Section Break",
+   "label": "Exit Investment"
+>>>>>>> sahil-feature
   },
   {
    "fieldname": "investment",
@@ -80,6 +97,10 @@
    "read_only": 1
   },
   {
+<<<<<<< HEAD
+=======
+   "fetch_from": "investment.broker",
+>>>>>>> sahil-feature
    "fieldname": "broker",
    "fieldtype": "Link",
    "label": "Broker",
@@ -109,13 +130,24 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+<<<<<<< HEAD
+=======
+  },
+  {
+   "fieldname": "column_break_qjfm",
+   "fieldtype": "Column Break"
+>>>>>>> sahil-feature
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
+<<<<<<< HEAD
  "modified": "2026-01-26 23:59:41.292994",
+=======
+ "modified": "2026-01-27 15:51:09.716785",
+>>>>>>> sahil-feature
  "modified_by": "Administrator",
  "module": "Investment Portfolio Management",
  "name": "Exit Investment",
