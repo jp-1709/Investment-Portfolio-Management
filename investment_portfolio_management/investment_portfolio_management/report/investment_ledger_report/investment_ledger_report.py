@@ -1,9 +1,10 @@
 # app/report/investment_ledger_report/investment_ledger_report.py
+
 import frappe
 
 def execute(filters=None):
     if not filters:
-        filters = {}
+        filters = {} 
 
     columns = get_columns()
     data = get_data(filters)

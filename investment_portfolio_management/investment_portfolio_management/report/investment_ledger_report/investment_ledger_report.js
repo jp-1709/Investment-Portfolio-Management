@@ -1,4 +1,5 @@
 // app/report/investment_ledger_report/investment_ledger_report.js
+
 frappe.query_reports["Investment Ledger Report"] = {
     "filters": [
         {
