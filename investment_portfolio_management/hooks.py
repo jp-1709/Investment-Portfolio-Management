@@ -12,16 +12,16 @@ fixtures = [
     {
         "dt": "Server Script",
         "filters": [
-            ["name", "=", "get_top_asset"]]
+            ["name", "=", "Get Top Asset"]]
     },
     {
         "dt": "Number Card",
         "filters": [
-            ["name", "in", [
+            ["name", "in", [  
                 "Total Active Investments",
                 "Total Active Amount Invested",
-                "Top Performing Asset",
-                "Total Credit Amount",
+                "Top Performing Asset", 
+                "Total Credit Amount", 
                 "Total Debit Amount",
                 "Total Transactions",
                 "Total Investment Ledger Entry's"
