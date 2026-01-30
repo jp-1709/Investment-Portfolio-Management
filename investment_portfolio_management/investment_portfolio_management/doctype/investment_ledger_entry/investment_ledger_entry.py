@@ -68,11 +68,7 @@ def create_investment_ledger_entry(args):
         
     if args.get("units_in"):
         doc.units_in = args.get("units_in")
-<<<<<<< HEAD
     if args.get("units_out"):
-=======
-    if args.get("units_out"): 
->>>>>>> sahil-feature
         doc.units_out = args.get("units_out")
         
     # Calculate Balance
