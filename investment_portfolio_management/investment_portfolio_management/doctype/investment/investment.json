@@ -6,10 +6,6 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-<<<<<<< HEAD
-=======
-  "investment_section",
->>>>>>> sahil-feature
   "investment_category",
   "investment_type",
   "column_break_mzdj",
@@ -17,7 +13,6 @@
   "investment_scheme",
   "section_break_col7",
   "broker",
-<<<<<<< HEAD
   "investment_date",
   "amount_invested",
   "units",
@@ -25,29 +20,13 @@
   "maturity_date",
   "expected_roi",
   "status",
-=======
-  "units",
-  "price_per_unit",
-  "amount_invested",
-  "column_break_blgg",
-  "investment_date",
-  "maturity_date",
-  "expected_roi",
-  "status",
-  "remark_section",
->>>>>>> sahil-feature
   "remarks",
   "amended_from"
  ],
  "fields": [
   {
    "fieldname": "section_break_col7",
-<<<<<<< HEAD
    "fieldtype": "Section Break"
-=======
-   "fieldtype": "Section Break",
-   "label": "Investment Data"
->>>>>>> sahil-feature
   },
   {
    "fieldname": "investment_category",
@@ -137,22 +116,6 @@
    "fieldtype": "Column Break"
   },
   {
-<<<<<<< HEAD
-=======
-   "fieldname": "investment_section",
-   "fieldtype": "Section Break",
-   "label": "Investment"
-  },
-  {
-   "fieldname": "column_break_blgg",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "remark_section",
-   "fieldtype": "Section Break"
-  },
-  {
->>>>>>> sahil-feature
    "fieldname": "amended_from",
    "fieldtype": "Link",
    "label": "Amended From",
@@ -167,11 +130,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
-<<<<<<< HEAD
  "modified": "2026-01-26 23:36:18.829964",
-=======
- "modified": "2026-01-27 15:37:52.235686",
->>>>>>> sahil-feature
  "modified_by": "Administrator",
  "module": "Investment Portfolio Management",
  "name": "Investment",

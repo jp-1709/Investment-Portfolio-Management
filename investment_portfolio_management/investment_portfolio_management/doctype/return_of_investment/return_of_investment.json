@@ -22,12 +22,7 @@
  "fields": [
   {
    "fieldname": "section_break_fokl",
-<<<<<<< HEAD
    "fieldtype": "Section Break"
-=======
-   "fieldtype": "Section Break",
-   "label": "ROI"
->>>>>>> sahil-feature
   },
   {
    "fieldname": "investment",
@@ -69,20 +64,12 @@
   },
   {
    "description": "If return is reinvested as units",
-<<<<<<< HEAD
-=======
-   "fetch_from": "investment.units",
->>>>>>> sahil-feature
    "fieldname": "units_affected",
    "fieldtype": "Float",
    "label": "Units Affected",
    "reqd": 1
   },
   {
-<<<<<<< HEAD
-=======
-   "fetch_from": "investment.broker",
->>>>>>> sahil-feature
    "fieldname": "broker",
    "fieldtype": "Link",
    "label": "Broker",
@@ -112,11 +99,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
-<<<<<<< HEAD
  "modified": "2026-01-26 23:38:06.359983",
-=======
- "modified": "2026-01-27 16:11:21.111423",
->>>>>>> sahil-feature
  "modified_by": "Administrator",
  "module": "Investment Portfolio Management",
  "name": "Return of Investment",

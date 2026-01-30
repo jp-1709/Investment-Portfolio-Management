@@ -8,14 +8,42 @@ app_license = "mit"
 # Apps
 # ------------------
 
-<<<<<<< HEAD
-=======
-
->>>>>>> sahil-feature
+fixtures = [
+    {
+        "dt": "Server Script",
+        "filters": [
+            ["name", "=", "get_top_asset"]]
+    },
+    {
+        "dt": "Number Card",
+        "filters": [
+            ["name", "in", [
+                "Total Active Investments",
+                "Total Active Amount Invested",
+                "Top Performing Asset",
+                "Total Credit Amount",
+                "Total Debit Amount",
+                "Total Transactions",
+                "Total Investment Ledger Entry's"
+            ]]
+        ]
+    },
+    {
+        "dt": "Dashboard Chart",
+        "filters": [
+            ["name", "in", [
+                "Monthly Returns",
+                "Monthly Investment",
+                "Portfolio Value Trend",
+                "Investment Type Distribution"
+            ]]
+        ]
+    }
+]
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
+# add_to_apps_screen = [ 
 # 	{
 # 		"name": "investment_portfolio_management",
 # 		"logo": "/assets/investment_portfolio_management/logo.png",
