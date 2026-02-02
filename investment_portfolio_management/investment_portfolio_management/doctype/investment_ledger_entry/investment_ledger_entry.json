@@ -7,9 +7,12 @@
  "engine": "InnoDB",
  "field_order": [
   "posting_date",
+  "document_date",
+  "company",
   "column_break_fvrr",
   "investment",
   "transaction_type",
+  "is_cancelled",
   "section_break_tdtg",
   "units_in",
   "units_out",
@@ -19,6 +22,9 @@
   "section_break_voik",
   "balance_units",
   "balance_amount",
+  "column_break_tcxt",
+  "pnl",
+  "voucher_no",
   "section_break_excl",
   "remarks"
  ],
@@ -26,34 +32,47 @@
   {
    "fieldname": "posting_date",
    "fieldtype": "Date",
-   "label": "Posting Date"
+   "label": "Posting Date",
+   "read_only": 1
   },
   {
    "fieldname": "investment",
    "fieldtype": "Link",
    "label": "Investment",
-   "options": "Investment"
+   "options": "Investment",
+   "read_only": 1
   },
   {
    "fieldname": "transaction_type",
    "fieldtype": "Select",
    "label": "Transaction Type",
-   "options": "\nInvestment\nReturn\nExit"
+   "options": "\nInvestment\nReturn\nExit",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_cancelled",
+   "fieldtype": "Check",
+   "label": "Is Cancelled",
+   "read_only": 1
   },
   {
    "fieldname": "debit_amount",
    "fieldtype": "Currency",
-   "label": "Debit Amount"
+   "label": "Debit Amount",
+   "read_only": 1
   },
   {
    "fieldname": "credit_amount",
    "fieldtype": "Currency",
-   "label": "Credit Amount"
+   "label": "Credit Amount",
+   "read_only": 1
   },
   {
    "fieldname": "units_in",
    "fieldtype": "Float",
-   "label": "Units In"
+   "label": "Units In",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_fvrr",
@@ -66,7 +85,8 @@
   {
    "fieldname": "units_out",
    "fieldtype": "Float",
-   "label": "Units Out"
+   "label": "Units Out",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_rkap",
@@ -79,12 +99,14 @@
   {
    "fieldname": "balance_units",
    "fieldtype": "Float",
-   "label": "Balance Units"
+   "label": "Balance Units",
+   "read_only": 1
   },
   {
    "fieldname": "balance_amount",
    "fieldtype": "Currency",
-   "label": "Balance Amount"
+   "label": "Balance Amount",
+   "read_only": 1
   },
   {
    "fieldname": "section_break_excl",
@@ -93,13 +115,43 @@
   {
    "fieldname": "remarks",
    "fieldtype": "Small Text",
-   "label": "Remarks"
+   "label": "Remarks",
+   "read_only": 1
+  },
+  {
+   "fieldname": "document_date",
+   "fieldtype": "Date",
+   "label": "Document Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pnl",
+   "fieldtype": "Currency",
+   "label": "P&L",
+   "read_only": 1
+  },
+  {
+   "fieldname": "voucher_no",
+   "fieldtype": "Data",
+   "label": "Voucher Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_tcxt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company ",
+   "options": "Company",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-27 00:08:33.310822",
+ "modified": "2026-01-28 14:57:43.397418",
  "modified_by": "Administrator",
  "module": "Investment Portfolio Management",
  "name": "Investment Ledger Entry",

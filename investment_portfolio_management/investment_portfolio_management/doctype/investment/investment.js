@@ -1,10 +1,21 @@
 frappe.ui.form.on('Investment', {
-<<<<<<< HEAD
     refresh: function (frm) {
         frm.trigger('toggle_fields');
     },
-=======
->>>>>>> sahil-feature
+
+    units: function (frm) {
+        frm.trigger('calculate_amount');
+    },
+
+    price_per_unit: function (frm) {
+        frm.trigger('calculate_amount');
+    },
+
+    calculate_amount: function (frm) {
+        if (frm.doc.units && frm.doc.price_per_unit) {
+            frm.set_value('amount_invested', flt(frm.doc.units) * flt(frm.doc.price_per_unit));
+        }
+    },
 
     investment_type: function (frm) {
         if (!frm.doc.investment_type) return;
@@ -19,11 +30,7 @@ frappe.ui.form.on('Investment', {
     toggle_fields: function (frm) {
         if (!frm.doc.investment_type) return;
 
-<<<<<<< HEAD
         // If in cache use, else fetch
-=======
-        // If in cache use, else fetch 
->>>>>>> sahil-feature
         if (frm.inv_type_settings) {
             apply_settings(frm, frm.inv_type_settings);
         } else {
@@ -34,23 +41,8 @@ frappe.ui.form.on('Investment', {
                 });
         }
     }
-<<<<<<< HEAD
 });
 
-=======
-    
-});
-
-function calculate_amount(frm) {
-    let units = frm.doc.units || 0;
-    let price = frm.doc.price_per_unit || 0;
-
-    let amount = units * price;
-
-    frm.set_value('amount_invested', amount);
-}
-
->>>>>>> sahil-feature
 function apply_settings(frm, settings) {
     // has_scheme -> investment_scheme
     frm.toggle_display('investment_scheme', settings.has_scheme);
@@ -64,3 +56,27 @@ function apply_settings(frm, settings) {
     frm.toggle_display('maturity_date', settings.has_maturity);
     frm.toggle_reqd('maturity_date', settings.has_maturity);
 }
+
+// Add filtering for accounts
+frappe.ui.form.on('Investment', {
+    setup: function (frm) {
+        frm.set_query("bank_account", function () {
+            return {
+                filters: {
+                    "company": frm.doc.company,
+                    "is_group": 0,
+                    "disabled": 0
+                }
+            };
+        });
+        frm.set_query("investment_account", function () {
+            return {
+                filters: {
+                    "company": frm.doc.company,
+                    "is_group": 0,
+                    "disabled": 0
+                }
+            };
+        });
+    }
+});

@@ -1,0 +1,107 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"fctCFlpldL\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Investment Portfolio Management</span>\",\"col\":12}},{\"id\":\"doKy9Oc9o2\",\"type\":\"card\",\"data\":{\"card_name\":\"Investment\",\"col\":4}},{\"id\":\"_Ftc6wb-DN\",\"type\":\"card\",\"data\":{\"card_name\":\"Exit Investment\",\"col\":4}},{\"id\":\"KiFCjPAvkH\",\"type\":\"card\",\"data\":{\"card_name\":\"Return Of Investment\",\"col\":4}},{\"id\":\"vyZY5I-n6c\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"pvsVhf7wyE\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Investment Ledger</b></span>\",\"col\":12}},{\"id\":\"dd8341zGG_\",\"type\":\"card\",\"data\":{\"card_name\":\"Investment Ledger Entry\",\"col\":12}}]",
+ "creation": "2026-01-27 14:49:31.727061",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "color-review-points",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Investment Portfolio Management",
+ "links": [
+  {
+   "description": "Starting with new investment",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Investment",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Investment",
+   "link_count": 0,
+   "link_to": "Investment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Exit Investment",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Exit Investment",
+   "link_count": 0,
+   "link_to": "Exit Investment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Return Of Investment",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Return of Investment",
+   "link_count": 0,
+   "link_to": "Return of Investment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Investment Ledger Entry",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Investment Ledger Entry",
+   "link_count": 0,
+   "link_to": "Investment Ledger Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-01-27 17:50:09.016478",
+ "modified_by": "Administrator",
+ "module": "Investment Portfolio Management",
+ "name": "Investment Portfolio Management",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 28.0,
+ "shortcuts": [],
+ "title": "Investment Portfolio Management"
+}

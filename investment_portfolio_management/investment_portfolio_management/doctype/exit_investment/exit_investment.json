@@ -1,14 +1,17 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{EXIT}-{YYYY}-{####}",
+ "autoname": "format:{EXIT}-{YYYY}-{#####}",
  "creation": "2026-01-24 13:12:31.960131",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "section_break_gmt3",
+<<<<<<< HEAD
   "investment",
 <<<<<<< HEAD
+=======
+>>>>>>> 8abebcd (Added functionality of journal entry, fixed deposit, finance math logic)
   "exit_date",
   "exit_type",
 =======
@@ -21,6 +24,7 @@
   "net_amount",
   "broker",
   "pnl",
+<<<<<<< HEAD
 =======
   "column_break_qjfm",
   "net_amount",
@@ -29,6 +33,17 @@
   "exit_date",
   "exit_type",
 >>>>>>> sahil-feature
+=======
+  "column_break_dwfm",
+  "investment",
+  "naming_series",
+  "posting_date",
+  "company",
+  "account_section",
+  "investment_account",
+  "column_break_vxcx",
+  "bank_account",
+>>>>>>> 8abebcd (Added functionality of journal entry, fixed deposit, finance math logic)
   "section_break_owjv",
   "remarks",
   "amended_from"
@@ -37,11 +52,16 @@
   {
    "fieldname": "section_break_gmt3",
 <<<<<<< HEAD
+<<<<<<< HEAD
    "fieldtype": "Section Break"
 =======
    "fieldtype": "Section Break",
    "label": "Exit Investment"
 >>>>>>> sahil-feature
+=======
+   "fieldtype": "Section Break",
+   "label": "Exit Data"
+>>>>>>> 8abebcd (Added functionality of journal entry, fixed deposit, finance math logic)
   },
   {
    "fieldname": "investment",
@@ -114,7 +134,8 @@
   },
   {
    "fieldname": "section_break_owjv",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Remarks"
   },
   {
    "fieldname": "remarks",
@@ -122,12 +143,55 @@
    "label": "Remarks"
   },
   {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series"
+  },
+  {
+   "fieldname": "column_break_dwfm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "account_section",
+   "fieldtype": "Section Break",
+   "label": "Account"
+  },
+  {
+   "fieldname": "investment_account",
+   "fieldtype": "Link",
+   "label": "Investment Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_break_vxcx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bank_account",
+   "fieldtype": "Link",
+   "label": "Bank Account",
+   "options": "Account"
+  },
+  {
    "fieldname": "amended_from",
    "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Exit Investment",
+   "label": "Amended Form",
+   "options": "Return of Investment",
    "print_hide": 1,
+<<<<<<< HEAD
    "read_only": 1,
    "search_index": 1
 <<<<<<< HEAD
@@ -137,17 +201,38 @@
    "fieldname": "column_break_qjfm",
    "fieldtype": "Column Break"
 >>>>>>> sahil-feature
+=======
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended Form",
+   "options": "Return of Investment",
+   "print_hide": 1,
+   "read_only": 1
+>>>>>>> 8abebcd (Added functionality of journal entry, fixed deposit, finance math logic)
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
+<<<<<<< HEAD
  "links": [],
 <<<<<<< HEAD
  "modified": "2026-01-26 23:59:41.292994",
 =======
  "modified": "2026-01-27 15:51:09.716785",
 >>>>>>> sahil-feature
+=======
+ "links": [
+  {
+   "link_doctype": "Journal Entry",
+   "link_fieldname": "custom_exit_investment"
+  }
+ ],
+ "modified": "2026-01-30 12:51:42.066040",
+>>>>>>> 8abebcd (Added functionality of journal entry, fixed deposit, finance math logic)
  "modified_by": "Administrator",
  "module": "Investment Portfolio Management",
  "name": "Exit Investment",
