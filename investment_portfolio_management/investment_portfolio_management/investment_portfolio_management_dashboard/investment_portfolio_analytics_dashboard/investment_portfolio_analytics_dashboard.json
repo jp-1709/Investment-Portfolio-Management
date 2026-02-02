@@ -7,9 +7,6 @@
    "card": "Total Active Amount Invested"
   },
   {
-   "card": "Total Debit Amount"
-  },
-  {
    "card": "Total Credit Amount"
   },
   {
@@ -41,7 +38,7 @@
  "idx": 0,
  "is_default": 0,
  "is_standard": 1,
- "modified": "2026-01-30 15:25:29.287464",
+ "modified": "2026-02-02 12:54:47.891283",
  "modified_by": "Administrator",
  "module": "Investment Portfolio Management",
  "name": "Investment Portfolio Analytics Dashboard",

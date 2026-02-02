@@ -8,10 +8,6 @@ app_license = "mit"
 # Apps
 # ------------------
 
-<<<<<<< HEAD
-=======
-
->>>>>>> sahil-feature
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
@@ -251,3 +247,35 @@ app_license = "mit"
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
+fixtures = [
+    {
+        "dt": "Server Script",
+        "filters": [
+            ["name", "=", "Get Top Asset"]]
+    },
+    {
+        "dt": "Number Card",
+        "filters": [
+            ["name", "in", [  
+                "Total Active Investments",
+                "Total Active Amount Invested",
+                "Top Performing Asset", 
+                "Total Credit Amount", 
+                "Total Debit Amount",
+                "Total Transactions",
+                "Total Investment Ledger Entry's"
+            ]]
+        ]
+    },
+    {
+        "dt": "Dashboard Chart",
+        "filters": [
+            ["name", "in", [
+                "Monthly Returns",
+                "Monthly Investment",
+                "Portfolio Value Trend",
+                "Investment Type Distribution"
+            ]]
+        ]
+    }
+]

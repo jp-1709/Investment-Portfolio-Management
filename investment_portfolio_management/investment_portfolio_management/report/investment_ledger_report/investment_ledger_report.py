@@ -78,7 +78,9 @@ def get_data(filters):
         ON
             ile.investment = i.name
         WHERE
-            i.docstatus = 1 
+            i.docstatus = 1
+            AND i.status = 'Active'
+            AND (i.maturity_date >= CURDATE() OR i.maturity_date IS NULL OR i.maturity_date = '') 
             {conditions}
         ORDER BY
             ile.posting_date DESC
